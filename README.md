@@ -24,10 +24,10 @@ Part of the [**Off-Grid Community Suite**](https://github.com/Nezugi/Off-Grid-Co
 ## Installation
 
 ```bash
-cp -r calendar/ ~/.nomadnetwork/storage/pages/calendar/
+copy files to ~/.nomadnetwork/storage/pages/calendar/
 chmod +x ~/.nomadnetwork/storage/pages/calendar/*.mu
 chmod +x ~/.nomadnetwork/storage/pages/calendar/admin/*.mu
-mkdir -p /home/YOUR_USER/.nomadCalendar
+
 # edit main.py — set storage_path
 python3 ~/.nomadnetwork/storage/pages/calendar/setup_admin.py
 # restart NomadNet
