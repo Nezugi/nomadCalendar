@@ -2,7 +2,7 @@
 
 A shared community event calendar for [NomadNet](https://github.com/markqvist/NomadNet) nodes — anyone can submit events, recurring events require admin approval, past events stay visible for 90 days.
 
-> Part of the **Off-Grid Community Suite** for NomadNet nodes.
+Part of the [**Off-Grid Community Suite**](https://github.com/Nezugi/Off-Grid-Community-Suite/tree/main) for NomadNet nodes.
 
 ---
 
