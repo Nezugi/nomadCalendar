@@ -24,13 +24,31 @@ Part of the [**Off-Grid Community Suite**](https://github.com/Nezugi/Off-Grid-Co
 ## Installation
 
 ```bash
-copy files to ~/.nomadnetwork/storage/pages/calendar/
-chmod +x ~/.nomadnetwork/storage/pages/calendar/*.mu
-chmod +x ~/.nomadnetwork/storage/pages/calendar/admin/*.mu
+# Installation of nomadCalendar
 
-# edit main.py — set storage_path
+## 1. Clone the repository
+git clone https://github.com/Nezugi/nomadCalendar
+cd nomadCalendar
+
+## 2. Copy calendar page into your NomadNet pages directory
+cp -r calendar/ ~/.nomadnetwork/storage/pages/calendar/
+
+## 3. Make all .mu files executable
+chmod +x ~/.nomadnetwork/storage/pages/calendar/*.mu
+chmod +x ~/.nomadnetwork/storage/pages/calendar/admin_*.mu
+
+## 4. Edit main.py
+nano ~/.nomadnetwork/storage/pages/calendar/main.py
+
+# Adjust the following line to match your username:
+# storage_path = "/home/YOUR_USER/.nomadCalendar"
+
+## 5. Create the admin account
 python3 ~/.nomadnetwork/storage/pages/calendar/setup_admin.py
-# restart NomadNet
+
+# After installation, access the calendar via:
+# YOUR_NODE_HASH:/page/calendar/index.mu
+
 ```
 
 ---
